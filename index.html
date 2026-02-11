@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ai4.sg | AI tools for everyone</title>
+  <meta name="description" content="A curated list of practical AI tools for everyone. Built in Singapore." />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav">
+      <a class="brand" href="#">ai4.sg</a>
+      <div class="navlinks">
+        <a href="#tools">Tools</a>
+        <a href="#submit">Submit</a>
+        <a href="#about">About</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <h1>AI tools for everyone</h1>
+      <p class="muted">
+        A curated directory of useful AI tools. Highlighting creators from Singapore when possible.
+      </p>
+
+      <div class="controls">
+        <input id="q" class="input" type="search" placeholder="Search tools (e.g., writing, code, slides)" autocomplete="off" />
+        <select id="cat" class="select">
+          <option value="all">All categories</option>
+        </select>
+        <label class="check">
+          <input id="sgOnly" type="checkbox" />
+          Built in Singapore
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="tools">
+      <div class="section-head">
+        <h2>Tools</h2>
+        <p class="muted" id="count"></p>
+      </div>
+
+      <div id="grid" class="grid" aria-live="polite"></div>
+      <div id="empty" class="empty" hidden>
+        No tools match your filters.
+      </div>
+    </section>
+
+    <section id="submit" class="panel">
+      <h2>Submit a tool</h2>
+      <p class="muted">Send a link and a one-line description. Let us know if you are from SG!</p>
+      <a class="btn" href="mailto:hello@ai4.sg?subject=Tool%20submission%20for%20ai4.sg&body=Tool%20name%3A%0ALink%3A%0ACategory%3A%0ABuilt%20in%20Singapore%3F%20(yes%2Fno)%3A%0AOne-line%20description%3A%0A">
+        Email submission
+      </a>
+      <p class="muted small">
+      </p>
+    </section>
+
+    <section id="about" class="panel">
+      <h2>About</h2>
+      <p class="muted">
+        ai4.sg is a lightweight directory to help people quickly find good AI tools for work, study, and everyday life.
+        If a tool is built by a Singapore team or founder, we tag it as “Built in SG”.
+      </p>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <span class="muted">© <span id="year"></span> ai4.sg</span>
+    <span class="muted">Made in Singapore</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
